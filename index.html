@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upload Your Resume</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f7fbfa;color:#080818;font-family:Arial,Helvetica,sans-serif}button,input{font:inherit}.page{min-height:100vh;max-width:1440px;margin:auto;display:grid;grid-template-columns:45% 55%;padding:72px 56px 36px 74px;gap:0}.intro{position:relative;min-height:642px;padding-top:17px;overflow:hidden}.intro h1{font-size:29px;line-height:1.32;font-weight:400;color:#090b0c;margin:0 0 16px}.intro p{font-size:14px;line-height:25px;color:#a3a6a6;max-width:475px;margin:0;padding-right:24px}.illustration{position:absolute;width:470px;height:425px;bottom:-37px;left:-38px}.card{background:#fff;border-radius:24px;box-shadow:0 2px 15px #173a4b1c;min-height:642px;padding:18px 13.6% 60px;display:flex;flex-direction:column}.card h2{font-size:27px;letter-spacing:2px;font-weight:500;margin:0 0 32px;line-height:32px}.dropzone{height:293px;flex-shrink:0;position:relative;border:1px dashed #7396ff;border-radius:13px;background:#f2faff;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:25px;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}.dropzone:hover,.dropzone.dragging{background:#e8f3ff;border-color:#2258ff}.dropzone:focus-within{outline:3px solid #a9bfff;outline-offset:4px}.dropzone input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}.upload-icon{width:42px;height:35px;color:#204de8;margin:7px 0 13px}.hint{font-size:12px;line-height:23px;color:#a2a7aa;margin:0;max-width:350px}.filename{font-size:13px;color:#2455ef;margin:10px 0 0;max-width:100%;overflow-wrap:anywhere}.filename:empty{display:none}.actions{display:flex;gap:20px;margin:68px 39px 0}.button{height:47px;border:0;border-radius:5px;background:#2058ff;color:white;letter-spacing:2px;font-size:17px;cursor:pointer;flex:1;white-space:nowrap;transition:background .2s,transform .15s,box-shadow .2s}.button.secondary{background:#77a8ff}.button:hover{background:#1546dd;box-shadow:0 5px 13px #2455ff25}.button.secondary:hover{background:#5c94f5}.button:active{transform:translateY(2px)}.button:focus-visible{outline:3px solid #a9bfff;outline-offset:4px}.steps{display:flex;align-items:center;justify-content:space-between;position:relative;width:240px;margin:70px auto 0;padding:0 19px;list-style:none}.steps:before{content:"";height:3px;position:absolute;left:0;right:0;background:linear-gradient(to right,#88a5ff 88%,#dce0e9 88%);border-radius:4px}.steps li{position:relative;display:grid;place-items:center;background:#91a9ff;border:2px solid #3157ff;border-radius:50%;width:23px;height:23px;font-size:9px;color:#fff}.steps svg{width:10px;height:10px;color:#3157ff}.status{text-align:center;color:#42608f;font-size:13px;line-height:20px;margin:15px 0 -35px;min-height:20px}.status:empty{visibility:hidden}@media(min-width:1450px){.page{padding-top:9vh}}@media(max-width:1000px){.page{padding:44px 30px;grid-template-columns:43% 57%}.card{padding-left:9%;padding-right:9%}.intro h1{font-size:26px}.illustration{width:390px;left:-60px}.actions{margin-left:0;margin-right:0}}@media(max-width:700px){.page{display:flex;flex-direction:column;padding:28px 20px;gap:28px}.intro{min-height:auto;padding:0}.intro h1{font-size:27px}.intro p{max-width:450px}.illustration{display:none}.card{min-height:550px;padding:26px 24px 35px;border-radius:20px}.card h2{font-size:24px;margin-bottom:26px}.dropzone{height:255px;padding:20px}.actions{margin-top:35px;gap:14px}.button{font-size:15px}.steps{margin-top:42px;width:220px}.status{margin-bottom:-20px}}
+</style>
+</head>
+<body>
+<main class="page">
+<section class="intro" aria-labelledby="page-title">
+<h1 id="page-title">Finish!<br>Upload Your Resume</h1>
+<p>Upload your resume, the platform will help you parse and optimize, you can also skip this step</p>
+<svg class="illustration" viewBox="0 0 470 425" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<g stroke="#606362" stroke-width="1.5" stroke-linejoin="round">
+<path d="M363 420C432 360 378 287 393 228C415 184 410 135 427 79C423 48 418 23 400 7C382-9 366 24 358 44L347 65L365 72L344 69C328 98 326 127 331 150L345 154L330 159C326 188 337 204 347 220C360 269 321 368 363 420Z" fill="#fff"/>
+<path d="M398 7C388 84 384 144 369 203C369 124 383 55 398 7Z" fill="#d5d6d5"/><path d="M399 8L382 106L374 175M412 40L427 39L416 19M416 44L430 47Q445 88 438 115L415 121L434 121Q416 142 433 163L420 166L434 166L440 184L414 191M352 107L351 124M387 177L385 188" fill="#f6f6f6"/>
+<path d="M298 86Q287 35 281 82" fill="#eee"/><path d="M202 82H335Q358 82 358 105V398Q358 420 336 420H208Q189 420 189 398V105Q189 82 202 82Z" fill="#2874f8"/><path d="M211 103H304Q312 103 312 95Q312 89 319 89H330Q349 89 349 110V385Q349 407 330 407H216Q199 407 199 388V113Q199 103 211 103Z" fill="#f5f6f7"/><rect x="209" y="128" width="129" height="130" rx="13"/><rect x="210" y="272" width="128" height="27" rx="13" fill="#ececec"/><rect x="210" y="309" width="128" height="27" rx="13" fill="#ececec"/><path d="M294 362Q307 360 315 354"/>
+<path d="M84 61H260Q271 61 271 73V151Q271 163 260 163H218V180Q218 186 212 180L198 163H84Q70 163 70 151V73Q70 61 84 61Z" fill="white"/><circle cx="111" cy="110" r="9"/><circle cx="150" cy="110" r="9"/><circle cx="189" cy="110" r="9"/><circle cx="228" cy="110" r="9"/><path d="M109 80L118 73M236 140L242 132"/>
+<path d="M283 190H427Q434 190 434 198V263Q434 271 427 271H332L321 285Q316 290 315 282V271H284Q275 271 275 263V198Q275 190 283 190Z" fill="#4f4f5c"/><path d="M283 190Q286 253 388 271H283Q275 271 275 263V198Q275 190 283 190Z" fill="#3f4040" stroke="none"/>
+<g fill="white"><circle cx="310" cy="228" r="7"/><circle cx="341" cy="228" r="7"/><circle cx="372" cy="228" r="7"/><circle cx="403" cy="228" r="7"/></g><path d="M394 197L403 202M434 234L455 235"/>
+<path d="M58 327Q29 303 67 244Q78 224 52 210Q1 184 7 166Q16 141 44 156Q76 174 91 205Q104 230 85 255Q44 308 58 327Z" fill="#357ff9"/><path d="M8 174Q37 171 41 208Q9 191 8 174ZM89 197Q73 214 90 239Q100 218 89 197Z" fill="#f7f8f8"/><path d="M54 180Q60 187 59 197"/>
+<path d="M36 423Q32 335 64 304Q96 265 154 295L180 309Q169 286 175 262L189 274Q217 263 239 272L250 262Q261 293 258 336L256 386Q288 382 279 402L273 423Z" fill="#347ffc"/><path d="M175 262L177 277L189 274M239 272L249 278L250 262" fill="#f8f8f8"/><path d="M156 312Q116 289 105 328Q102 341 121 340Q141 339 156 312ZM257 341Q229 345 242 362L257 367M103 423Q110 371 140 389L152 423" fill="#f6f7f7"/><path d="M154 294Q189 330 150 387Q174 377 192 392L201 423M87 350Q99 351 105 357M215 344Q223 343 227 337"/>
+<ellipse cx="199" cy="291" rx="10" ry="12" fill="#fff"/><ellipse cx="232" cy="291" rx="10" ry="12" fill="#fff"/><ellipse cx="203" cy="288" rx="3" ry="5" fill="#172a45" stroke="none"/><ellipse cx="236" cy="288" rx="3" ry="5" fill="#172a45" stroke="none"/><path d="M215 304L218 307L221 303Z" fill="#253445"/><path d="M207 307L161 298M207 312L159 312M226 308L274 290M227 313L276 308"/>
+</g></svg>
+</section>
+<section class="card" aria-labelledby="upload-title">
+<h2 id="upload-title">Upload file</h2>
+<label class="dropzone" id="dropzone">
+<input id="resume" type="file" accept=".pdf,.doc,.docx,.txt" aria-label="Upload resume">
+<svg class="upload-icon" viewBox="0 0 42 35" fill="none" aria-hidden="true"><path d="M12 29H31C42 29 41 16 32 16C30 4 15 1 10 13C-1 13-1 29 12 29Z" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 24V14M16.5 18.5L21 14L25.5 18.5" stroke="currentColor" stroke-width="3.5"/></svg>
+<p class="hint">Drag your resume file to this area, or click on the area to select<br class="desktop-break"> the appropriate file to upload</p>
+<p class="filename" id="filename" aria-live="polite"></p>
+</label>
+<div class="actions"><button class="button secondary" id="back" type="button">Last step</button><button class="button" id="finish" type="button">Finish</button></div>
+<ol class="steps" aria-label="Step 3 of 3"><li aria-label="Step 1 complete"><svg viewBox="0 0 12 12"><path d="m2 6 3 3 5-6" fill="none" stroke="currentColor"/></svg></li><li aria-label="Step 2 complete"><svg viewBox="0 0 12 12"><path d="m2 6 3 3 5-6" fill="none" stroke="currentColor"/></svg></li><li aria-current="step">3</li></ol>
+<p class="status" id="status" role="status"></p>
+</section>
+</main>
+<script>
+const input=document.getElementById('resume'),zone=document.getElementById('dropzone'),filename=document.getElementById('filename'),status=document.getElementById('status');let selectedFile=null;
+function selectFile(file){if(!file)return;if(!/\.(pdf|docx?|txt)$/i.test(file.name)){status.textContent='Please select a PDF, Word, or TXT file.';return;}selectedFile=file;filename.textContent=file.name;status.textContent='';}
+input.addEventListener('change',()=>selectFile(input.files[0]));
+['dragenter','dragover'].forEach(event=>zone.addEventListener(event,e=>{e.preventDefault();zone.classList.add('dragging');}));
+['dragleave','drop'].forEach(event=>zone.addEventListener(event,e=>{e.preventDefault();zone.classList.remove('dragging');}));
+zone.addEventListener('drop',e=>selectFile(e.dataTransfer.files[0]));
+document.getElementById('finish').addEventListener('click',()=>{status.textContent=selectedFile?'All set! Your resume has been selected.':'All set! You have skipped the resume step.';});
+document.getElementById('back').addEventListener('click',()=>{status.textContent='This is a standalone preview of the final step.';});
+</script>
+</body>
+</html>
