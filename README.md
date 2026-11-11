@@ -8,6 +8,7 @@
 | --- | --- | --- |
 | 简历上传页面 | [resume-upload](./resume-upload/) | HTML、CSS 和原生 JavaScript 实现的响应式上传页面 |
 | Spring Boot 登录与 Hello World | [springboot-security-hello](./springboot-security-hello/) | Spring Boot 3.2.0、Spring Security 用户名密码登录及受保护 API |
+| MIT 博客爬虫（真实 CSV 待网络放行后生成） | [mit-blogs-crawler](./mit-blogs-crawler/) | Playwright 与 DrissionPage 双引擎，六列 CSV 导出 |
 
 ## 添加新项目
 
@@ -19,8 +20,15 @@ wuwei/
 ├── resume-upload/
 │   ├── README.md
 │   └── index.html
-└── springboot-security-hello/
+├── springboot-security-hello/
+│   ├── README.md
+│   ├── pom.xml
+│   └── src/
+└── mit-blogs-crawler/
     ├── README.md
-    ├── pom.xml
-    └── src/
+    ├── crawl.py
+    ├── browsers.py
+    ├── parser.py
+    ├── requirements.txt
+    └── tests/
 ```
