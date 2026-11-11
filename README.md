@@ -7,6 +7,7 @@
 | 项目 | 文件夹 | 说明 |
 | --- | --- | --- |
 | 简历上传页面 | [resume-upload](./resume-upload/) | HTML、CSS 和原生 JavaScript 实现的响应式上传页面 |
+| Spring Boot 登录与 Hello World | [springboot-security-hello](./springboot-security-hello/) | Spring Boot 3.2.0、Spring Security 用户名密码登录及受保护 API |
 
 ## 添加新项目
 
@@ -15,7 +16,11 @@
 ```text
 wuwei/
 ├── README.md
-└── resume-upload/
+├── resume-upload/
+│   ├── README.md
+│   └── index.html
+└── springboot-security-hello/
     ├── README.md
-    └── index.html
+    ├── pom.xml
+    └── src/
 ```
